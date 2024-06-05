@@ -1,0 +1,74 @@
+<div class="page">
+
+    <div *ngIf="product.length === 0">
+        <h1 class="text-danger">Your Cart is Empty <br>Please add Some Items </h1>
+    </div>
+
+
+
+    
+    <div class="mainbox">
+
+        <div class="boxer" *ngFor="let product of product; ">
+            <div class="imgbox">
+                <img [src]="product.thumbnail" [alt]="product.title">
+            </div>
+            <div class="idbox">
+                <div class="id">Product ID</div>
+                <div class="idvalue">{{product.id}}</div>
+            </div>
+            <div class="namebox">
+                <div class="name">Name</div>
+                <div class="namevalue">{{product.title}}</div>
+            </div>
+             <div class="descbox">
+                <div class="description">About</div>
+                <div class="descvalue">{{product.description}}</div>
+            </div> 
+            <div class="numbersdiv">
+                <div class="ratingbox">
+                    <div class="rating">Rating</div>
+                    <div class="ratingvalue">{{product.rating}}</div>
+                </div>
+                <div class="pricebox">
+                    <div class="price">Price</div>
+                    <div class="pricevalue">{{product.price  }}</div>
+                    
+                </div>
+    
+            </div>
+            <button (click)="removeItem(product)">Remove from Cart</button>
+            <span>{{ product.name }} - ${{ product.price }} x {{ product.quantity }}</span>
+            
+            <div class="quantity" *ngIf="product.length !=0">
+                <button class="plus" (click)="increaseQuantity(product)">+</button>
+            
+                <button class="minus" (click)="decreaseQuantity(product)">-</button>
+
+        </div>
+
+        </div>
+        
+                
+    </div>
+
+
+
+    
+    <div class="emptier" *ngIf="product.length !=0">
+        <button class="empty" (click)="emptyCart()">Empty cart</button>
+        <div class="totalprice">Total Price :${{totalPrice}}</div>
+        <button class="continue" routerLink="/home">Continue Shopping</button>
+        <button class="checkout" (click)="onCheckout()">Checkout</button>
+     </div>
+    
+
+<div *ngIf="showModal" class="modal-backdrop">
+  <div class="modal-content">
+    <p>Your products will arrive in several days</p>
+    <p>Thanks for choosing us!</p>
+    <button (click)="onCloseModal()">Close</button>
+  </div>
+</div>
+    
+</div>

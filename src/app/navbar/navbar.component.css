@@ -1,0 +1,51 @@
+.navbar-nav{
+    display: flex;
+    gap: 40px;
+    
+}
+.maindiv{
+    display: flex;
+    justify-content: space-around;
+}
+.textbox{
+    font-size: 30px;
+    text-decoration: none;
+    font-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+
+.imgbox{
+    width: 100px;
+    height: 110px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+.login{
+    border: none;
+    color: rgb(11, 132, 245);
+    font-weight: bold;
+}
+
+.logout{
+    border: none;
+    color: rgb(238, 54, 22);
+    font-weight: bold;
+}
+@media(max-width:775px){
+    .textbox{
+        font-size: 20px;
+    }
+}

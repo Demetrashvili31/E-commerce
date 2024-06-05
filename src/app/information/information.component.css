@@ -1,0 +1,77 @@
+
+.imgbox{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.idvalue{
+font-size: 26px;
+
+}
+.namevalue{
+    font-weight: bold;
+    font-size: 22px;
+}
+.descvalue{
+    font-size: 20px;
+}
+.descvalue{
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+}
+.ratingvalue,.pricevalue,.price,.rating{
+    font-weight: bold;
+}
+
+ .idbox,.namebox,.descbox,.pricebox.imgbox{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+ }
+.idbox{
+    height: 20px;
+}
+
+
+.div4{
+    display: flex;
+    padding: 80px;
+}
+.numbersdiv{
+    display: flex;
+    gap: 70px;
+}
+.ratingvalue,.rating{
+    color: rgb(128, 4, 0);
+}
+.price,.pricevalue{
+    color: green;
+}
+
+.headerdiv{
+    text-align: center;
+    padding-top: 50px;
+}
+.mainbox{
+    /* width: 1000px; */
+    display: flex;
+    gap: 20px;
+justify-content: center;
+    flex-wrap: wrap;
+}
+.boxer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}

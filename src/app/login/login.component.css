@@ -1,0 +1,59 @@
+
+
+.section_3{
+  flex-direction: column;
+}
+
+.form {
+  
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+ 
+  
+  }
+  .form_1, .form_2{
+    gap: 20px;
+  }
+  .form h2{
+    text-align: center;
+  }
+  
+  
+  .orange{
+    border-radius: 70px;
+  }
+
+  
+  input {
+    width: 300px;
+    padding: 8px;
+   
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  .signupdiv{
+    display: flex;
+    justify-content: center;
+  }
+  .signup{
+    width: 100px;
+  }
+
+  @media(max-width:775px){
+    .form h2{
+      font-size: 20px;
+    }
+    input {
+      width: 200px;
+      height: 30px;
+      padding: 8px;
+     
+    }
+  }

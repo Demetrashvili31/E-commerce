@@ -1,0 +1,29 @@
+.filter{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 10px;
+    /* position: fixed; */
+}
+.filterbox button{
+    width: 150px;
+    height: 30px;
+    background-color: rgba(7, 118, 245, 0.808);
+    border: none;
+    border-radius: 20px;
+}
+
+
+@media(max-width:1185px){
+    .filter{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .filterbox button{
+        width: 100px;
+    }
+}

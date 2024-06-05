@@ -1,0 +1,41 @@
+.textbox{
+    text-align: center;
+    width: 500px;
+    line-height:3cap;
+    font-family:"Bitter", serif;
+}
+.div{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.imgbox{
+    height: 300px;
+    width: 300px;
+}
+
+
+@media(max-width:1085px){
+    .div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgbox{
+        height: 400px;
+        width: 400px;
+    }
+    .imgbox img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width:776px){
+.textbox{
+    font-size: 13px;
+    width: 100%;
+    padding: 40px;
+    
+}
+}

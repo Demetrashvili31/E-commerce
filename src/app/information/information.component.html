@@ -1,0 +1,36 @@
+
+
+<div class="mainbox">
+
+    <div class="boxer" *ngIf="product; ">
+        <div class="imgbox">
+            <img [src]="product.thumbnail" [alt]="product.title">
+        </div>
+        <div class="idbox">
+            <div class="id">Product ID</div>
+            <div class="idvalue">{{product.id}}</div>
+        </div>
+        <div class="namebox">
+            <div class="name">Name</div>
+            <div class="namevalue">{{product.title}}</div>
+        </div>
+         <div class="descbox">
+            <div class="description">About</div>
+            <div class="descvalue">{{product.description}}</div>
+        </div> 
+        <div class="numbersdiv">
+            <div class="ratingbox">
+                <div class="rating">Rating</div>
+                <div class="ratingvalue">{{product.rating}}</div>
+            </div>
+            <div class="pricebox">
+                <div class="price">Price</div>
+                <div class="pricevalue">{{product.price  }}</div>
+                
+            </div>
+
+        </div>
+        
+
+        
+    </div>

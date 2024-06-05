@@ -1,0 +1,47 @@
+<div class="headerdiv">
+    <h1>All You Need in One Corner</h1>
+</div>
+
+
+<div class="div4">
+    <app-filteringprods (onSelect)="productFilter($event)" ></app-filteringprods>
+   
+    <div class="catalog">
+        <ul class="list">
+            <ng-container *ngFor="let product of products">
+                <li *ngIf="selectedChange === 'all' || selectedChange === product.category">
+                    <div class="imgbox"[routerLink]="'/info/'+product.id">
+                        <img [src]="product.thumbnail" [alt]="product.title">
+                    </div>
+                    <div class="idbox">
+                        <div class="id">Product ID</div>
+                        <div class="idvalue">{{product.id}}</div>
+                    </div>
+                    <div class="namebox">
+                        <div class="name">Name</div>
+                        <div class="namevalue">{{product.title}}</div>
+                    </div>
+                    
+                    <div class="numbersdiv">
+                        <div class="ratingbox">
+                            <div class="rating">Rating</div>
+                            <div class="ratingvalue">{{product.rating}}</div>
+                        </div>
+                        <div class="pricebox">
+                            <div class="price">Price</div>
+                            <div class="pricevalue">{{product.price  }}</div>
+                            
+                        </div>
+                    </div>
+                    <div class="addtocart">
+                        <button  routerLink="/cart"    (click)="addtoCart(product)">Add To Cart</button>
+                    </div>
+                </li>
+            </ng-container>
+            
+        </ul>
+    </div>
+</div>
+
+
+

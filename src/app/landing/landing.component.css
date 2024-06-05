@@ -1,0 +1,150 @@
+
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.textdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.imgdiv{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.h1,.p{
+    width: 400px;
+}
+.h1 h1{
+    font-size: 70px;
+}
+.p p{
+    font-size: 25px;
+}
+
+/* .p{
+
+} */
+.catalog{
+    /* width: 1300px; */
+padding: 0  100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.list{
+    display: flex;
+    flex-wrap:wrap;
+     justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+li{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.imgbox{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.idvalue{
+font-size: 10px;}
+.namevalue{
+    font-weight: bold;
+}
+.descvalue{
+    font-size: 12px;
+}
+.descvalue{
+    width: 200px;
+}
+
+/* .idbox,.namebox,.descbox,.pricebox{
+    /* width: 200px; */
+    /* height: 100px; */
+/* } */ 
+.idbox{
+    height: 20px;
+}
+.descbox{
+    height: 150px;
+}
+
+.numbersdiv{
+    display: flex;
+    gap: 20px;
+}
+.ratingvalue,.rating{
+    color: rgb(128, 4, 0);
+}
+.price,.pricevalue{
+    color: green;
+}
+.btndiv{
+    display: flex;
+    justify-content: center;
+}
+.prodbtn{
+    width: 200px;
+    height: 50px;
+}
+
+
+@media(max-width:1200px){
+    .textdiv{
+        gap: 30px;
+    }
+    .h1 h1{
+        font-size: 30px;
+    }
+    .p p{
+        font-size: 15px;
+    }
+    
+    .textdiv{
+        padding: 30px;
+    }
+    .imgdiv{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media(max-width:775px){
+    .banner{
+        flex-direction: column;
+    }
+    .textdiv{
+      text-align: center;
+    }
+    .h1,.p{
+        width: 300px;
+    }
+}

@@ -1,0 +1,27 @@
+
+<div class="filler d-flex justify-content-center flex-direction-column ">
+    <div class="section_3 d-flex">
+        <form class="form" (ngSubmit)="login()">
+
+            <h2>Please Register  and Enjoy </h2>
+            <div class="form_1 d-flex justify-content-center align-items-center">
+          
+                <input type="text" id="user" name="username" placeholder="UserName" [(ngModel)]="client.user" required  autocomplete="username">
+            </div>
+            <div class="form_1 d-flex justify-content-center align-items-center">
+                <input type="password" id="password" name="password" placeholder="Password"   [(ngModel)]="client.password" required autocomplete="current-password">
+            </div>
+            
+            
+            <button type="submit" class="form_submit" >Login</button>
+        </form>
+       <div class="signupdiv">
+        <a routerLink="/register">register</a>
+
+       </div>
+       
+
+     
+
+</div>
+  </div>

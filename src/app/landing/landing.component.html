@@ -1,0 +1,59 @@
+<div class="mainbox">
+    <div class="banner">
+        <div class="textdiv">
+           <div class="h1"><h1>The Highest Quality </h1></div> 
+           <div class="p"><p>Don't  miss out This season's must-have products. Sign up and Join us Today</p>
+            <button routerLink="/login">Sing in/SingUp</button></div> 
+        </div>
+        <div class="imgdiv">
+            <img class="img" src="/assets/images/shop.png" alt="" >
+        </div>
+    </div>
+    <div class="productsdiv">
+        
+    <div class="catalog">
+        <ul class="list">
+            <ng-container *ngFor="let product of products">
+                <li >
+                    <div class="imgbox"[routerLink]="'/info/'+product.id">
+                        <img [src]="product.thumbnail" [alt]="product.title">
+                    </div>
+                    <div class="idbox">
+                        <div class="id">Product ID</div>
+                        <div class="idvalue">{{product.id}}</div>
+                    </div>
+                    <div class="namebox">
+                        <div class="name">Name</div>
+                        <div class="namevalue">{{product.title}}</div>
+                    </div>
+                    <!-- <div class="descbox">
+                        <div class="description">About</div>
+                        <div class="descvalue">{{product.description}}</div>
+                    </div> -->
+                    <div class="numbersdiv">
+                        <div class="ratingbox">
+                            <div class="rating">Rating</div>
+                            <div class="ratingvalue">{{product.rating}}</div>
+                        </div>
+                        <div class="pricebox">
+                            <div class="price">Price</div>
+                            <div class="pricevalue">{{product.price  }}</div>
+                            
+                        </div>
+                    </div>
+                    <div class="addtocart">
+                        <button  routerLink="/cart"    (click)="addtoCart(product)">Add To Cart</button>
+                    </div>
+                </li>
+            </ng-container>
+            
+        </ul>
+        
+   <div class="btndiv">
+    <button class="prodbtn" routerLink="/home">See All Products</button>
+   </div> 
+    </div>
+    
+    </div>
+
+</div>
